@@ -2,11 +2,11 @@ function getFeedbackData(){
     var numOfWords = countWords()
     var rating = getRating()
     alert("Number of words in your feedback: " + numOfWords + "\nYour Rating: " + rating);
+    redirectToHome();
 }
 
 function countWords(){
-    var text = document
-    .getElementById("feedback").value;
+    var text = document.getElementById("feedback").value;
     var numWords = 0;
     for (var i = 0; i < text.length; i++) {
         var currentCharacter = text[i];
