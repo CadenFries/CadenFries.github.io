@@ -11,15 +11,26 @@
     </head>
     <body>
         <div class="flexContainerVert">
+            <div class="navbar">
+                <a href="WorkoutTrackerHomePage.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="WorkoutPlanner.html">Workout Planner</a>
+                        <a href="AddWorkout.html">Add Workout</a>
+                        <a href="FeedbackPage.html">Feedback</a>
+                    </div>
+                </div>
+                <button onclick="switchTheme()" class="navbarButton">
+                    <img src="/images/day-and-night.png" alt="themeChanger">
+                </button>
+            </div> 
             <div class="flexContainerHorNoSpace">
                 <img src="/images/GuyRunning.png" alt="GuyRunning" class="websitePNG">
                 <h1 class="boldCenter">Workout Tracker</h1>
                 <img src="/images/WorkoutTracker.png" alt="WorkoutTracker" class="websitePNG">
-            </div>
-            <div class="flexContainerHorSpace">
-                <a href="WorkoutTrackerHomePage.html">Home</a>
-                <a href="WorkoutPlanner.html">Planner</a>
-                <h3 class="flexItems">Link3</h3>
             </div>
             <form>
                 <label for="name">Workout Name:</label><br>
@@ -45,5 +56,6 @@
                 <input type="reset" value="Reset">
             </form>
         </div>
+        <script src="/scripts.js"></script>
     </body>
 </html>

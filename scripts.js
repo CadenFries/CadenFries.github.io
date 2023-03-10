@@ -2,7 +2,6 @@ function getFeedbackData(){
     var numOfWords = countWords()
     var rating = getRating()
     alert("Number of words in your feedback: " + numOfWords + "\nYour Rating: " + rating);
-    redirectToHome();
 }
 
 function countWords(){
@@ -29,5 +28,14 @@ function getRating(){
         return "4";
     }else if (document.getElementById("5Star").checked == true){
         return "5";
+    }
+}
+
+function switchTheme(){
+    var website = document.body;
+    if (website.classList.contains("lightMode")){
+        return website.classList.toggle("darkMode");
+    }else{
+        return website.classList.toggle("lightMode");
     }
 }
