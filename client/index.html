@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <title>WorkoutTracker Application</title>
+    </head>
+    <body>
+        <div class="flexContainerVert">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Pages
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="FeedbackPage.html">Feedback</a>
+                    </div>
+                </div>
+                <button onclick="switchTheme()" class="navbarButton">
+                    <img src="images/day-and-night.png" alt="themeChanger">
+                </button>
+            </div>
+            <div class="flexContainerHorNoSpace">
+                <img src="images/deadlift.png" alt="deadlift" class="websitePNG">
+                <h1 class="boldCenter">Workout Tracker</h1>
+                <img src="images/workout.png" alt="workout" class="websitePNG">
+            </div>
+            <main>
+                <div class="flexContainerHorSpace">
+                    <div class="flexContainerVertAddContent">
+                        <H2 class="lefttitle">Add Workout</H2>
+                        <label for="name">Workout Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="reps">Number of Sets:</label><br>
+                        <input type="number" id="sets" name="sets"><br>
+                        <label for="reps">Number of Reps:</label><br>
+                        <input type="number" id="reps" name="reps"><br>
+                        <label for="name">Workout Day:</label><br>
+                        <input type="text" id="day" name="day"><br>
+                        <button id="submitBtn">Submit</button>
+                    </div>
+                    <div class="flexContainerVertTable">
+                        <h2 class="title">Workouts</h2>
+                        <table id="workoutTable">
+                            <thead>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Sets</th>
+                                <th>Reps</th>
+                                <th>Day</th>
+                                <th>Delete</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
